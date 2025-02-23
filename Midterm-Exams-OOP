@@ -1,0 +1,108 @@
+//EDJE TYRONE IGAYA 
+//1. Write a Java program to create a class called "Person" with a name, age, and address attribute. Create Five instances of the "Person" class, set their attributes using the constructor, and print their name and age. 
+class Person {
+    String name;
+    int age;
+    String address;
+
+    public Person(String name, int age, String address) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+
+    public void display() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Person p1 = new Person("Edje", 20, "Quezon City");
+        Person p2 = new Person("Juliana", 19, "Manila");
+        Person p3 = new Person("Michael", 21, "Davao");
+        Person p4 = new Person("John", 22, "Quezon City");
+        Person p5 = new Person("Eve", 18, "Baguio");
+
+        p1.display();
+        p2.display();
+        p3.display();
+        p4.display();
+        p5.display();
+    }
+}
+
+//EDJE TYRONE IGAYA
+//2. Write a Java program to create a class called "Dog" with a name and breed attribute. Create two instances of the "Dog" class, set their attributes using the constructor and modify the attributes using the setter methods and print the updated values.
+class Dog {
+    private String name;
+    private String breed;
+
+
+    public Dog(String name, String breed) {
+        this.name = name;
+        this.breed = breed;
+    }
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+
+    public String getName() {
+        return name;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        Dog dog1 = new Dog("Buddy", "Labrador");
+        Dog dog2 = new Dog("Max", "Bulldog");
+
+
+        dog1.setName("Rocky");
+        dog2.setBreed("Golden Retriever");
+
+
+        System.out.println("Dog 1: Name = " + dog1.getName() + ", Breed = " + dog1.getBreed());
+        System.out.println("Dog 2: Name = " + dog2.getName() + ", Breed = " + dog2.getBreed());
+    }
+}
+
+//EDJE TYRONE IGAYA
+//3. Write a Java program to create a class called "Rectangle" with width and height attributes. Calculate the area and perimeter of the rectangle.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        double length, width;
+
+
+        System.out.println("Please enter a number for length and press the return key:");
+        length = scanner.nextDouble();
+        
+        System.out.println("Please enter a number for width and press the return key:");
+        width = scanner.nextDouble();
+
+
+        System.out.println("Rectangle area: " + (length * width));
+
+
+        scanner.close();
+    }
+}
